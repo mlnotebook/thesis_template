@@ -2,7 +2,7 @@
 
 This LaTeX template was created by Rob Robinson for his PhD Thesis: final version submitted July 22nd 2020.
 
-[A copy of the finished thesis is available in this repository](https://github.com/mlnotebook/thesis_template/Robinson-R-2020-PhD-Thesis.pdf), but will also be available on Imperial College London's Spiral Repository.
+[A copy of the finished thesis is available in this repository](https://github.com/mlnotebook/thesis_template/blob/master/Robinson-R-2020-PhD-Thesis.pdf), but will also be available on Imperial College London's Spiral Repository.
 
 If you use this template, please be sure to accreddit the repository in the "Declaration" section of your thesis:
 
