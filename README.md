@@ -44,62 +44,72 @@ Caption title and description (title also appears in Table of Contents):
 
 <table>
 <tr>
-	<td>
-	**Chapters**
+<td>
+<b>Chapters</b>
 
-	Chapter headings in the template have their own page. They are aligned to the bottom of the page and consist of:
-	* Chapter number - automatically enumerated.
-	* Abstract - written in the bespoke 'cabstract' environment.
-	* Description/publication statement - recognition of publication status of the work in the chapter.
-	
-	</td>
-	<td>
-		<img src="images/chapter_preview.png" style="width: 100%;" alt="Preview of Chapter Heading">
-	</td>
+Chapter headings in the template have their own page. They are aligned to the bottom of the page and consist of:
+<ul>
+<li>Chapter number - automatically enumerated.</li>
+<li>Abstract - written in the bespoke 'cabstract' environment.</li>
+<li>Description/publication statement - recognition of publication status of the work in the chapter.</li>
+</ul>
+
+</td>
+<td>
+<img src="images/chapter_preview.png" style="width: 100%;" alt="Preview of Chapter Heading">
+</td>
 </tr>
 <tr>
-	<td>
-	**Figures**
+<td>
+<b>Figures</b>
 
-	Figures use the 'mdframed' package to give a contrasting background to the figure image.
-	Captions use the 'mycaption' user-defined command noted above which has a title and description component.
-	</td>
-	<td>
-		<img src="images/figure_preview.png" style="width: 100%;" alt="Preview of Figure">
-	</td>
+<ul>
+<li>Figures use the 'mdframed' package to give a contrasting background to the figure image.</li>
+<li>Captions use the 'mycaption' user-defined command noted above which has a title and description component.</li>
+</ul>
+</td>
+<td>
+    <img src="images/figure_preview.png" style="width: 100%;" alt="Preview of Figure">
+</td>
 </tr>
 <tr>
-	<td>
-	**Tables**
+<td>
+<b>Tables</b>
 
-	Tables use the 'mdframed' package to give a contrasting background to the table.
-	The 'colorbox' is used to make sure that the tables have an enclosing white box if multiple tables are stacked together.
-	Multiple tables can be stacked together horizontally or vertically using the 'minipage' environment.
-	Captions use the 'mycaption' user-defined command noted above which has a title and description component.
-	</td>
-	<td>
-		<img src="images/figure_preview.png" style="width: 100%;" alt="Preview of Figure">
-	</td>
+<ul>
+<li>Tables use the 'mdframed' package to give a contrasting background to the table.</li>
+<li>The 'colorbox' is used to make sure that the tables have an enclosing white box if multiple tables are stacked together.</li>
+<li>Multiple tables can be stacked together horizontally or vertically using the 'minipage' environment.</li>
+<li>Captions use the 'mycaption' user-defined command noted above which has a title and description component.</li>
+</ul>
+</td>
+<td>
+<img src="images/figure_preview.png" style="width: 100%;" alt="Preview of Figure">
+</td>
 </tr>
 <tr>
-	<td>
-	**Shaded**
+<td>
+<b>Shaded Sections</b>
 
-	The 'shaded' environment is used to create color blocks to emphasis distinct blocks of text - perhaps summaries or definitions.
-	</td>
-	<td>
-		<img src="images/color_block_preview.png" style="width: 49%;" alt="Preview of Figure">
-		<img src="images/color_block_preview.png" style="width: 49%;" alt="Preview of Figure">
-	</td>
+<ul>
+<li>The 'shaded' environment is used to create color blocks to emphasis distinct blocks of text - perhaps summaries or definitions.</li>
+</ul>
+</td>
+<td>
+<img src="images/color_block_preview.png" style="width: 49%;" alt="Preview of Figure">
+<img src="images/color_block_preview.png" style="width: 49%;" alt="Preview of Figure">
+</td>
 </tr>
 <tr>
-	<td>
-	**Source Code**
+<td>
+<b>Source Code</b>
 
-	A 'listings' environment has been repurposed to hold source code. These are held in the appendix. The listings are given their own table of contents after the list of tables.
-	</td>
-	<td>
-		<img src="images/listings_preview.png" style="width: 49%;" alt="Preview of Figure">
-	</td>
+<ul>
+<li>A 'listings' environment has been repurposed to hold source code. These are held in the appendix. The listings are given their own table of contents after the list of tables.</li>
+</ul>
+</td>
+<td>
+<img src="images/listings_preview.png" style="width: 49%;" alt="Preview of Figure">
+</td>
 </tr>
 </table>
