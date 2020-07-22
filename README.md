@@ -1,0 +1,105 @@
+# PhD Thesis Template
+
+This LaTeX template was created by Rob Robinson for his PhD Thesis: final version submitted July 22nd 2020.
+
+A copy of the finished thesis is available in this repository, but will also be available on Imperial College London's Spiral Repository.
+
+If you use this template, please be sure to accreddit the repository in the "Declaration" section of your thesis:
+
+```latex
+The formatting for this thesis is taken from the Thesis Template by R. Robinson at \url{https://github.com/mlnotebook/thesis_template}.
+```
+
+## Features:
+
+* Figures and Tables are in their own contrasting coloured boxes.
+* Captions have a title and description component.
+* Chapter headings get their own page with abstract formatting.
+* Pre-amble includes epigraph, dedication and other standard sections.
+* A 'listings' environment is repurposed to hold Source Code in the Appendix. Also added to Table of Contents.
+* Acronyms are shown in the preamble.
+
+## User-defined Commands
+
+Blank page:
+* `\newcommand{\blankpage}{\newpage\null\thispagestyle{empty}\newpage}`
+
+Italicized Latin:
+* `\newcommand{\eg}{\textit{e.g.}}`
+* `\newcommand{\ie}{\textit{i.e.}}`
+* `\newcommand{\cf}{\textit{c.f.}}`
+* `\newcommand{\etc}{\textit{etc.}}`
+* `\newcommand{\etal}{\textit{et al.}}`
+
+Horizontal Rule above Paragraph:
+* `\newcommand{\aboveparrule}{\leavevmode\rule{0.9\textwidth}{0.15ex}}`
+
+New page at each Section:
+* `\newcommand{\sectionbreak}{\clearpage}`
+
+Caption title and description (title also appears in Table of Contents):
+* `\newcommand*\mycaption[2]{\caption[#1]{\textbf{#1} #2}}`
+
+## Preview
+
+<table>
+<tr>
+	<td>
+	**Chapters**
+
+	Chapter headings in the template have their own page. They are aligned to the bottom of the page and consist of:
+	* Chapter number - automatically enumerated.
+	* Abstract - written in the bespoke 'cabstract' environment.
+	* Description/publication statement - recognition of publication status of the work in the chapter.
+	
+	</td>
+	<td>
+		<img src="images/chapter_preview.png" style="width: 100%;" alt="Preview of Chapter Heading">
+	</td>
+</tr>
+<tr>
+	<td>
+	**Figures**
+
+	Figures use the 'mdframed' package to give a contrasting background to the figure image.
+	Captions use the 'mycaption' user-defined command noted above which has a title and description component.
+	</td>
+	<td>
+		<img src="images/figure_preview.png" style="width: 100%;" alt="Preview of Figure">
+	</td>
+</tr>
+<tr>
+	<td>
+	**Tables**
+
+	Tables use the 'mdframed' package to give a contrasting background to the table.
+	The 'colorbox' is used to make sure that the tables have an enclosing white box if multiple tables are stacked together.
+	Multiple tables can be stacked together horizontally or vertically using the 'minipage' environment.
+	Captions use the 'mycaption' user-defined command noted above which has a title and description component.
+	</td>
+	<td>
+		<img src="images/figure_preview.png" style="width: 100%;" alt="Preview of Figure">
+	</td>
+</tr>
+<tr>
+	<td>
+	**Shaded**
+
+	The 'shaded' environment is used to create color blocks to emphasis distinct blocks of text - perhaps summaries or definitions.
+	</td>
+	<td>
+		<img src="images/color_block_preview.png" style="width: 49%;" alt="Preview of Figure">
+		<img src="images/color_block_preview.png" style="width: 49%;" alt="Preview of Figure">
+	</td>
+</tr>
+<tr>
+	<td>
+	**Source Code**
+
+	A 'listings' environment has been repurposed to hold source code. These are held in the appendix. The listings are given their own table of contents after the list of tables.
+	</td>
+	<td>
+		<img src="images/listings_preview.png" style="width: 49%;" alt="Preview of Figure">
+	</td>
+</tr>
+</table>

@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% IMPORT PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{report}
+\usepackage[a4paper, top=15mm, bottom=15mm]{geometry}
+\parskip = 2\baselineskip
+\usepackage[parfill]{parskip}
+
+\usepackage{enumitem}
+\usepackage[pdftex,dvipsnames]{xcolor}
+\usepackage{textcomp}
+
+\input{meta/contents} % Tables of Content
+\input{meta/tables_figures} % Tables, Figures and Captions Packages
+\input{meta/graphics} % Graphics
+\input{meta/font} % Fonts and Encoding Packages (Including checks and crosses)
+\input{meta/maths} % Maths
+\input{meta/code} % Code (Listings)
+\input{meta/hyperlinks} % Hyperlinks Packages
+\input{meta/references} % .bib files and Reference Formatting
+\input{meta/titles} % Titles, abstracts & epigraph
+
+% User defined commands
+\newcommand{\blankpage}{\newpage\null\thispagestyle{empty}\newpage}
+\newcommand{\eg}{\textit{e.g.}}
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\cf}{\textit{c.f.}}
+\newcommand{\etc}{\textit{etc.}}
+\newcommand{\etal}{\textit{et al.}}
+\newcommand{\aboveparrule}{\leavevmode\rule{0.9\textwidth}{0.15ex}}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{blindtext} % For this template only (cam be safely removed)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% BEGIN DOCUMENT %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\input{titlepage}
+\input{preamble/administration}
+%%%%%%%%%%%%%%% SET PAGE LAYOUT %%%%%%%%%%%%%%%
+\input{meta/pagelayout}
+\input{meta/chapterheads}
+%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%
+\onehalfspacing
+\input{preamble/epigraph}
+\blankpage % Starts the chapters on the front of a page
+\input{preamble/dedication}
+\input{preamble/declaration}
+\input{preamble/copyright}
+\input{preamble/acknowledgements}
+\input{preamble/abstract}
+
+%%%%%%%%%%%%%%% CONTENT %%%%%%%%%%%%%%% 
+\blankpage % Starts the contents on the front of a page
+\tableofcontents
+\listoffigures
+\listoftables
+\listoflistings
+
+\input{meta/glossary}
+
+%%%%%%%%%%%%%%% MAIN %%%%%%%%%%%%%%% 
+\onehalfspacing
+\input{chapters/chapter1-introduction/0-chapter1} % Introduction
+
+\setcounter{chapter}{2}
+\input{chapters/chapter3-contribution_1/0-chapter3} % Contribution Chapter 1
+
+\setcounter{chapter}{5}
+\input{chapters/chapter6-conclusions/0-chapter6.tex} % Conclusions
+
+
+% % %%%%%%%%%%%%%% POSTAMBLE %%%%%%%%%%%%%%%
+% Add bibliography to the Table of Contents using the given title.
+{\singlespacing\printbibliography[title={References},heading=bibintoc]}
+\input{postamble/appendix}
+
+\end{document}

@@ -1,0 +1,19 @@
+\usepackage[newfloat]{minted}
+\renewcommand*{\listlistingname}{List of Source Code}
+
+\newenvironment{longlisting}{\captionsetup{type=listing,justification=raggedright,singlelinecheck=false}}{}
+
+\setminted[python]{
+linenos,
+firstline=9,
+baselinestretch=0.8,
+frame=single,
+bgcolor=black!2,
+breaklines=true,
+firstnumber=1,
+tabsize=3,
+fontfamily=tt,
+fontsize=\fontsize{9pt}{11pt}\selectfont,
+baselinestretch=1}
+
+\usemintedstyle{vs}

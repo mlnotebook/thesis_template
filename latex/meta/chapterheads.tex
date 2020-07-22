@@ -1,0 +1,39 @@
+%%%%% Chapter Headings %%%%%%
+% NUMBERED CHAPTED HEADING
+\makeatletter
+\def\thickhrule{\leavevmode \leaders \hrule height 0.25ex \hfill \kern \z@}
+\def\position{\centering}
+\renewcommand{\@makechapterhead}[1]{%
+  \vspace*{2\p@}%
+  {\vfill\parindent \z@
+        {  \vfill\raggedright\LARGE {\fontsize{20pt}{20pt}\selectfont Chapter \thechapter} }
+        \par\nobreak
+        {\thickhrule}
+        \vspace*{1\p@}%
+        \interlinepenalty\@M
+        \par\nobreak
+        \vspace*{1\p@}%
+        {\raggedright\bfseries\fontsize{26pt}{26pt}\selectfont {#1}\par\nobreak}
+        \par\nobreak
+        \vspace*{1\p@}}%
+    \vskip 10\p@
+  }
+
+% STARRED CHAPTER HEADING (e.g. Preamble Dedication, Acknowledgements...)
+\def\@makeschapterhead#1{%
+  \vspace*{2\p@}%
+  {\parindent \z@
+        {\thickhrule}
+        \par\nobreak
+        \vspace*{1\p@}%
+        \interlinepenalty\@M
+        \par\nobreak
+        \vspace*{1\p@}%
+        {\raggedright\bfseries\fontsize{26pt}{26pt}\selectfont {#1}\par\nobreak}
+        \par\nobreak
+        \vspace*{1\p@}%
+    \vskip 10\p@}
+  }
+\makeatother
+
+\setlength{\headheight}{14.5pt}

@@ -1,0 +1,30 @@
+\usepackage[english]{babel}
+\usepackage{csquotes,xpatch}
+\usepackage[backend=biber,style=numeric-comp,maxnames=3,minnames=3,giveninits=true,sorting=nyt,url=false]{biblatex}
+\DeclareNameAlias{author}{family-given}
+\DeclareNameAlias{default}{family-given}
+\addbibresource{meta/0-references.bib}
+
+\usepackage[acronym]{glossaries}
+\usepackage{fancyref}
+
+% Create a new reference format for Listings (of source code) - allows the use of \fref{lst:listing_label} and creates a 'List of Listings' in the table of contents.
+
+\newcommand*{\fancyreflstlabelprefix}{lst}
+
+% Main format
+\frefformat{main}{\fancyreflstlabelprefix}
+    {\MakeUppercase{\freflstname}\fancyrefdefaultspacing#1#2}
+\Frefformat{main}{\fancyreflstlabelprefix}
+    {\MakeUppercase{\Freflstname}\fancyrefdefaultspacing#1#2}
+\Frefformat{main}{\fancyreflstlabelprefix}{Listing~#1}
+\frefformat{main}{\fancyreflstlabelprefix}{listing~#1}
+
+% Vario format
+\frefformat{vario}{\fancyreflstlabelprefix}
+    {\MakeUppercase{\freflstname}\fancyrefdefaultspacing#1#2}
+\Frefformat{vario}{\fancyreflstlabelprefix}
+    {\MakeUppercase{\Freflstname}\fancyrefdefaultspacing#1#2}
+\Frefformat{vario}{\fancyreflstlabelprefix}{Listing~#1 on page #2}
+\frefformat{vario}{\fancyreflstlabelprefix}{listing~#1 on page #2}
+\makeglossaries

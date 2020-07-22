@@ -1,0 +1,30 @@
+\subsection{Evaluation Strategies}
+\label{sec:3-seg_eval}
+
+This section can hold the methods used for evaluating the experiments performed in the this Chapter.
+
+\subsubsection{Some Metric}
+
+Equations can be used in a number of ways. The \gls{dsc} is used as an example below.
+
+\begin{enumerate}[label=\textbf{\arabic*}]
+\item Simple Display Equation: 
+% This '%' is necessary to reduce the gap between the text and equation - but it can be useful to keep it if equations spill over pages (thus the skip has not been hardcoded)
+\begin{equation}
+    \mathrm{DSC} = \frac{2 \left|\textbf{A} \cap \textbf{B}\right|}{\left|\textbf{A}\right| + \left|\textbf{B}\right|} \label{eq:simple_display_equation}   
+\end{equation}
+
+\item Annotated Display Equation: `falign` adds a title to the left (or right) of the equation. Uses the table cell notation `\&\&` to separate the left, middle and right parts.
+% 
+\begin{flalign}
+    \text{Dice Similarity Coefficient:\quad} &&\mathrm{DSC} = \frac{2 \left|\textbf{A} \cap \textbf{B}\right|}{\left|\textbf{A}\right| + \left|\textbf{B}\right|} \label{eq:dsc}&&    
+\end{flalign}
+
+\item Multi-Equation: `align` can align multiple equations by using the `\&` symbol on the equals sign and `\textbackslash\textbackslash` where the newline begins. Multiple labels can be used - one for each equation.
+% 
+\begin{align}
+    y &= (x+1)^2 \label{eq:aligned_1}\\
+    y &= (x^2 + 2x + 1) \label{eq:aligned_2}
+\end{align}
+
+\end{enumerate}

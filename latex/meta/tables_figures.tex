@@ -1,0 +1,48 @@
+\makeatletter
+\setlength{\@fptop}{0pt} % If the figure is alone on separate page, put it at the top
+\makeatother
+
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{multicol}
+\usepackage{longtable}
+\let\originalfigure=\figure
+\let\endoriginalfigure=\endfigure
+
+\renewenvironment{figure}[1][]{
+  \begin{originalfigure}[#1]
+    \begin{mdframed}
+    [linecolor=Blue,
+    linewidth=1.25pt,
+    backgroundcolor=black!4,
+    topline=true,
+    bottomline=true,
+    leftline=true,
+    rightline=true]
+}{
+    \end{mdframed}
+  \end{originalfigure}
+}
+
+\let\originaltable=\table
+\let\endoriginaltable=\endtable
+
+\renewenvironment{table}[1][]{
+  \begin{originaltable}[#1]
+    \begin{mdframed}
+    [linecolor=Blue,
+    linewidth=1pt,
+    backgroundcolor=black!4]
+}{
+    \end{mdframed}
+  \end{originaltable}
+}
+
+
+\usepackage[labelfont=bf]{caption}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.1}
+\newcommand*\mycaption[2]{\caption[#1]{\textbf{#1} #2}}

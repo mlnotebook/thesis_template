@@ -1,0 +1,41 @@
+\usepackage[explicit]{titlesec}
+\usepackage{setspace}
+
+\usepackage{fancyhdr}
+\newenvironment{cabstract} % Environment for the chapter abstract
+    {
+        \list{}{%
+        \setlength{\leftmargin}{1cm}
+        \setlength{\rightmargin}{\leftmargin}%
+      }%
+      \itshape\item\relax
+    }
+    {\par\vspace{1cm}}
+
+\newcommand{\colorsection}[1]{
+    \colorbox{black!10}{
+        \parbox{\dimexpr\textwidth-2\fboxsep}{\thesection \hspace*{0.5em} #1 \vspace{0.01em}}
+        }
+    }
+
+\titleformat{\section}[hang]%command
+    {\bfseries\fontsize{22pt}{22pt}\selectfont }%format
+    {}%label
+    {-8pt}%sep
+    {\colorsection{#1}\vspace*{-1em}}%before
+
+\titleformat{\subsection}%command
+    {\bfseries\fontsize{16pt}{16pt}\selectfont}%format
+    {\thesubsection}%label
+    {1em}%sep
+    {#1}%before
+    [\hrule height 0.8pt]%after
+ 
+\titleformat{\subsubsection}%command
+    {\bfseries\fontsize{14pt}{14pt}\selectfont}%format
+    {\thesubsubsection}%label
+    {1em}%sep
+    {#1}
+
+\usepackage{epigraph}
+\renewcommand{\epigraphflush}{center}

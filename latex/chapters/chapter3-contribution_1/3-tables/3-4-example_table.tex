@@ -1,0 +1,13 @@
+\begin{table}[h!]
+  \mycaption{Caption Title goes here (appears in TOC).}{Rest of the caption goes here \label{tab:example_table}}
+  \centering
+  \colorbox{white}{
+      \begin{tabular}{ccccc}
+      \hline 
+      \textbf{Experiment}  		& \textbf{Dataset} 				& \textbf{Size} 		& \textbf{GT} 		& \textbf{Seg. Method} 	\\	\hline		
+      A 		& Hammersmith   & 100		& \cmark		& RF 			\\
+      B 		& UKBB-2964	    & 4,805		& \cmark		& RF and CNN  	\\
+      C 		& UKBB-18545	& 7,250		& \xmark		& Multi-Atlas	\\   \hline
+      \end{tabular}
+  }%colorbox
+\end{table}
