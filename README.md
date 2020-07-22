@@ -42,7 +42,7 @@ Caption title and description (title also appears in Table of Contents):
 
 ## Preview
 
-<table>
+<table style="vertical-align: top;">
 <tr>
 <td>
 <b>Chapters</b>
@@ -96,8 +96,8 @@ Chapter headings in the template have their own page. They are aligned to the bo
 </ul>
 </td>
 <td>
-<img src="images/color_block_preview.png" style="width: 49%;" alt="Preview of Figure">
-<img src="images/color_block_preview.png" style="width: 49%;" alt="Preview of Figure">
+<img src="images/color_box_preview.png" style="width: 49%;" alt="Preview of Figure">
+<img src="images/limitations_preview.png" style="width: 49%;" alt="Preview of Figure">
 </td>
 </tr>
 <tr>
