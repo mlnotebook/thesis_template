@@ -45,6 +45,18 @@ Caption title and description (title also appears in Table of Contents):
 <table style="vertical-align: top;">
 <tr>
 <td>
+<b>Title Page</b>
+
+The title page contains a centralized title with aligned authorship data beneath.
+Two images are added to the top: institution and research group logos.
+
+</td>
+<td>
+<img src="images/title_page_preview.png" style="width: 100%;" alt="Preview of Title Page">
+</td>
+</tr>
+<tr>
+<td>
 <b>Chapters</b>
 
 Chapter headings in the template have their own page. They are aligned to the bottom of the page and consist of:
